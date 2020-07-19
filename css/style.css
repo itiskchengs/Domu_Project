@@ -12,7 +12,11 @@
     font-family: 'Lovelo-LineLight';
     src: url('../font/Lovelo-LineLight.ttf');
 }
-/*GLOBAL STYLES*/
+
+/*--------------------------------
+        GLOBAL STYLES
+--------------------------------*/
+
 *{
     padding: 0;
     margin: 0;
@@ -52,7 +56,11 @@ nav{
 .dropdown-menu{
     background-color: #161E26;
 }
-/*HERO IMAGE*/
+
+/*--------------------------------
+        HERO IMAGE
+---------------------------------*/
+
 .jumbotron {
     color: #fff;
     background-position: center;
@@ -72,14 +80,14 @@ nav{
     font-size: 45px;
     text-transform: uppercase;
     text-align: center;
-    left: 20%;
+    left: 16%;
     top: 28%;
     letter-spacing: 3px;
   }
   .hero-container button{
     position: absolute;
     top: 35%;
-    left: 22%;
+    left: 19%;
     text-align: center;
     color: #fff;
     font-size: 15px;
@@ -90,7 +98,11 @@ nav{
     background-color: transparent;
     border: solid 2px #fff;
 }
-  /* INDEX PAGE - EXPLAINATION SECTION*/
+
+  /*------------------------------------
+  INDEX PAGE - EXPLAINATION SECTION
+  -------------------------------------*/
+
   .domuExplanation{
     background-image: url(../img/DOMU+FOOTER+BG.png);
     width: 100;
@@ -116,6 +128,7 @@ nav{
     text-transform: uppercase;
     margin-top: 15px;
     padding: 5px 30px;
+    border: 2px solid #161E26;
 }
 .domuExplanationImgContainer img{
     width: 100%;
@@ -127,7 +140,11 @@ nav{
     margin-top: 40px;
     display: none;
 }
-/* INDEX PAGE - DOMU SELECTION SECTION */
+
+/*-------------------------------------
+INDEX PAGE - DOMU SELECTION SECTION 
+--------------------------------------*/
+
 .domuSelection{
     margin-top: 50px;
     padding: 0px;
@@ -140,7 +157,7 @@ nav{
 .domuSelectionLeft h2{
     position: absolute;
     top: 40%;
-    left: 25%;
+    left: 19%;
     color: #fff;
     font-size: 50px;
     text-transform: uppercase;
@@ -148,7 +165,7 @@ nav{
 .domuSelectionLeft button{
     position: absolute;
     top: 60%;
-    left: 38%;
+    left: 35%;
     text-align: center;
     color: #fff;
     font-size: 15px;
@@ -162,7 +179,7 @@ nav{
 .domuSelectionRight h2{
     position: absolute;
     top: 35%;
-    left: 37%;
+    left: 35%;
     color: #fff;
     font-size: 50px;
     text-transform: uppercase;
@@ -170,7 +187,7 @@ nav{
 .domuSelectionRight button{
     position: absolute;
     top: 55%;
-    left: 39%;
+    left: 35%;
     text-align: center;
     color: #fff;
     font-size: 15px;
@@ -181,7 +198,11 @@ nav{
     background-color: transparent;
     border: solid 2px #fff;
 }
-/*INDEX PAGE - JOIN US SECTION*/
+
+/*--------------------------------
+INDEX PAGE - JOIN US SECTION
+---------------------------------*/
+
 .joinUsSection h2{
     color: #161E26;
     font-size: 30px;
@@ -202,8 +223,13 @@ nav{
     text-transform: uppercase;
     margin-top: 15px;
     padding: 5px 30px;
+    border: 2px solid #161E26;
 }
-/*INDEX PAGE - ABOUT SECTION*/
+
+/*--------------------------------
+INDEX PAGE - ABOUT SECTION
+--------------------------------*/
+
 .aboutContainer{
     padding-top: 60px;
     padding-left: 0px;
@@ -234,7 +260,11 @@ nav{
     background-color: transparent;
     border: solid 2px #fff;
 }
-/*MENU PAGE*/
+
+/*--------------------------------
+            MENU PAGE
+---------------------------------*/
+
 .dinnerItemsContainer{
     border: solid 4px #000;
     padding-top: 30px;
@@ -327,7 +357,7 @@ nav{
     display: inline-block;
     padding: 0px 20px;
     text-transform: uppercase;
-    font-size: 19px;
+    font-size: 14px;
     font-family: Helvetica, sans-serif;
     border:none;
     background-color: transparent;
@@ -387,24 +417,28 @@ nav{
 .menuLocationContainer h3{
     position: absolute;
     top: 40%;
-    left: 11%;
+    left: 15%;
     color: #fff;
-    font-size: 22px;
+    font-size: 14px;
     letter-spacing: 4px;
     text-align: center;
 }
 .menuLocationContainer button{
     position: absolute;
     top: 60%;
-    left:35%;
+    left:32%;
     background-color: transparent;
     border: solid 2px #fff;
     color: #fff;
     text-transform: uppercase;
-    font-size: 11px;
+    font-size: 9px;
     padding: 5px 20px;
 }
-/*LOCATION PAGE*/
+
+/*--------------------------------
+        LOCATION PAGE
+---------------------------------*/
+
 .locationPageHoursContainer{
         border: solid 4px #000;
         padding-top: 30px;
@@ -475,7 +509,223 @@ nav{
     margin-bottom: 100px;
     margin-top: 100px;
 }
-/*FOOTER SECTION*/
+
+/*--------------------------------
+            ABOUT PAGE
+---------------------------------*/
+
+.aboutPageHeroSection{
+     background-image: url('../img/domu-about-header.png');
+     width: 100%;
+     height: 30vh;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+.aboutPageHeroSection h1{
+    color:#fff;
+    font-size: 40px;
+    position: absolute;
+    top: 40%;
+    left: 14%;
+    padding: 5px 30px;
+    border: solid 4px #fff;
+}
+.aboutPageDescriptionSection{
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+.aboutPageDescriptionSection img{
+    width: 100%;
+}
+.aboutPageDescriptionSection h2{
+    font-size: 36px;
+    margin-top: 10%;
+}
+.aboutPageDescriptionSection p{
+    padding-top: 15px;
+    font-size: 18px;
+    line-height: 40px;
+}
+.aboutPageDescriptionSection button{
+    background-color: transparent;
+    padding: 5px 30px;
+    margin-top: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 2px solid #161E26;
+}
+.aboutPageVideoSection{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.aboutPageVideoSection h2{
+    font-size: 36px;
+    margin-top: 50px;
+}
+.aboutPageVideoSection iframe{
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+}
+.aboutPagePhotoSection-header{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+.aboutPagePhotoSection{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+.aboutPagePhotoSection h2{
+    font-size: 45px;
+    margin-top: 50px;
+}
+.aboutPagePhotoSection img{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/*--------------------------------
+            CHIBI PAGE
+---------------------------------*/
+
+.chibiHeroImageSection{
+    background-image: url('../img/domu-chibi-background.png');
+    width :100%;
+    height: 30vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.chibiHeroImageSection h1{
+    color:#fff;
+    font-size: 40px;
+    position: absolute;
+    top: 34%;
+    left: 15%;
+    padding: 5px 30px;
+    border: solid 4px #fff;
+}
+.ChibiDescriptionSection{
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+.ChibiDescriptionSection img{
+    width: 100%;
+}
+.ChibiDescriptionSection h2{
+    margin-top: 20%;
+    font-size: 45px;
+}
+.ChibiDescriptionSection p{
+    font-size: 16px;
+    margin-top: 10%;
+}
+.ChibiDescriptionSection button{
+    padding: 5px 30px;
+    margin-top: 5%;
+    background-color: transparent;
+    text-transform: uppercase;
+    border: solid 2px #161E26;
+    color: #161E26;
+    font-size: 14px;
+}
+.chibiMenuHeader h2{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 45px;
+}
+.chibiMenuHeaderLine{
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #161E26;
+}
+.chibiMenu{
+    border: solid 4px #000;
+    padding-top: 30px;
+    width:85%;
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+.chibiMenu h2{
+    padding-top: 50px;
+    font-size: 25px; 
+    text-align: center;
+    color: #161E26;
+}
+.menuDinnerHeader h2{
+    padding-top:50px;
+    font-size: 48px;
+    text-align: center;
+    color: #161E26;
+}
+.horizontalLineDinnerHeader{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #161E26;
+}
+.fullDinnerMenu{
+    padding-top: 50px;
+}
+.howToRamen img{
+    margin-top: 0px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+.chibiMenuSection{
+    padding-left: 4%;
+    padding-right: 4%;
+}
+.chibiMenuSection h2{
+    padding-bottom: 40px;
+}
+.chibiMenuSection h3{
+    font-size: 20px;
+}
+.chibiMenuSection p{
+    font-size: 14px;
+    padding-bottom: 25px;
+}
+.chibiLocationContainer{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.chibiLocationHeader h2{
+    text-align:center;
+    font-size: 45px;
+}
+.chibiLocationLeft h3{
+    font-size: 20px;
+    margin-top: 15%;
+    margin-bottom: 5%;
+}
+.chibiLocationLeft p{
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.chibiLocationRight iframe{
+    margin-top: 20%;
+    width: 100%;
+}
+
+/*--------------------------------
+        FOOTER SECTION
+----------------------------------*/
+
 .footerContainer{
     padding-top: 50px;
     padding-bottom: 50px;
@@ -558,86 +808,11 @@ nav{
 .fbSocial{
     margin-left: 40% !important;
 }
-/*ABOUT PAGE*/
-.aboutPageHeroSection{
-     background-image: url('../img/domu-about-header.png');
-     width: 100%;
-     height: 30vh;
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;
-}
-.aboutPageHeroSection h1{
-    color:#fff;
-    font-size: 40px;
-    position: absolute;
-    top: 40%;
-    left: 25%;
-    padding: 5px 30px;
-    border: solid 4px #fff;
-}
-.aboutPageDescriptionSection{
-    margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-}
-.aboutPageDescriptionSection img{
-    width: 100%;
-}
-.aboutPageDescriptionSection h2{
-    font-size: 45px;
-    margin-top: 10%;
-}
-.aboutPageDescriptionSection p{
-    padding-top: 15px;
-    font-size: 18px;
-    line-height: 40px;
-}
-.aboutPageDescriptionSection button{
-    background-color: transparent;
-    padding: 5px 30px;
-    margin-top: 10px;
-    font-size: 18px;
-    text-transform: uppercase;
-}
-.aboutPageVideoSection{
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-.aboutPageVideoSection h2{
-    font-size: 45px;
-    margin-top: 50px;
-}
-.aboutPageVideoSection iframe{
-    width: 100%;
-    height: 300px;
-    margin-top: 20px;
-}
-.aboutPagePhotoSection{
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
-}
-.aboutPagePhotoSection h2{
-    font-size: 45px;
-    margin-top: 50px;
-}
-.aboutPagePhotoSection img{
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
-}
 
-/*CHIBI PAGE*/
-.chibiHeroImageSection{
-    background-image: url('../img/domu-chibi-background.png');
-    width :100%;
-    height: 70vh;
-}
-/*ANIMATIONS*/
+/*--------------------------------
+            ANIMATIONS
+---------------------------------*/
+
 .shutter-out-horizontal {
     -webkit-transition: color 300ms;
     transition: color 300ms;
@@ -671,8 +846,13 @@ nav{
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
   }
-   /*MEDIA QUERIES*/
-   /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+  /*--------------------------------
+            MEDIA QUERIES
+   -------------------------------*/
+   /*--------------------------------------------------------------------------------------
+   Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint 
+   ---------------------------------------------------------------------------------------*/
+
 @media (min-width: 768px) { 
     /*HERO IMG*/ 
     .hero-container h1{
@@ -695,7 +875,11 @@ nav{
         background-color: transparent;
         border: solid 2px #fff;
     }
-     /*DOMU SELECTION SECTION*/
+
+     /*---------------------------------------------
+            DOMU SELECTION SECTION (768px and up)
+     ----------------------------------------------*/
+
     .domuSelectionLeft{
         padding-right: 0px;
     }
@@ -732,7 +916,11 @@ nav{
         margin-top: 15px;
         padding: 5px 40px;
     }
-    /*ABOUT SECTION*/
+
+    /*------------------------------------------
+             ABOUT SECTION (768px and up)
+    -------------------------------------------*/
+
     .aboutContainer h2{
         top: 40%;
         left: 35%;
@@ -745,7 +933,11 @@ nav{
         margin-top: 15px;
         padding: 5px 40px;
     }
-    /*FOOTER SECTION*/
+
+    /*-----------------------------------------
+            FOOTER SECTION (768px and up)
+    ------------------------------------------*/
+
     .footerContainer h2{
         text-align: center;
         font-size: 30px;
@@ -789,10 +981,26 @@ nav{
     }
 }
  
-/* Large devices (desktops, 992px and up) */
+/*--------------------------------------------
+Large devices (desktops, 992px and up) 
+--------------------------------------------*/
+
 @media (min-width: 950px) { 
+
+/*--------------------------------
+            MENU PAGE
+---------------------------------*/
+.menuLocationContainer h3 {
+        font-size: 32px; 
+        left: 14%;
+    }
 }
-  /* Extra large devices (large desktops, 1200px and up) */
+
+
+/*------------------------------------------------------
+ Extra large devices (large desktops, 1200px and up) 
+------------------------------------------------------*/
+  
 @media (min-width: 1200px) { 
     /*NAVIGATION*/ 
     nav{
@@ -839,7 +1047,11 @@ nav{
         background-color: transparent;
         border: solid 2px #fff;
     }
-    /*DOMU EXPLANATION SECTION*/
+
+    /*------------------------------------------
+    DOMU EXPLANATION SECTION (1200px and up)
+    -------------------------------------------*/
+
     .domuExplanation h1{
         text-align: center;
         font-size: 80px;
@@ -858,6 +1070,7 @@ nav{
         text-transform: uppercase;
         margin-top: 20px;
         padding: 5px 30px;
+        border: solid 2px #161E26;
     }  .domuExplanationImgContainer{
         padding-left: 20%;
         padding-right: 20%;
@@ -880,7 +1093,11 @@ nav{
     .domuExplanationImg{
         padding-left: 0px !important;
     }
-    /*DOMU SELECTION SECTION*/
+
+   /*-----------------------------------------
+    DOMU SELECTION SECTION (1200px and up)
+    -----------------------------------------*/
+
     .domuSelectionLeft{
         padding-right: 0px;
     }
@@ -917,7 +1134,11 @@ nav{
         margin-top: 15px;
         padding: 5px 40px;
     }
-    /*JOIN US SECTION*/
+
+    /*--------------------------------
+    JOIN US SECTION (1200px and up)
+    --------------------------------*/
+
     .joinUsSection h2{
         font-size: 80px;
     }
@@ -928,6 +1149,7 @@ nav{
         font-size: 22px;
         margin-top: 15px;
         padding: 5px 40px;
+        border: solid 2px #161E26;
     }
     /*ABOUT SECTION*/
     .aboutContainer h2{
@@ -942,7 +1164,11 @@ nav{
         margin-top: 15px;
         padding: 5px 40px;
     }
-    /*MENU PAGE*/
+
+    /*--------------------------------
+        MENU PAGE (1200px and up)
+    --------------------------------*/
+    
 .dinnerItemsContainer{
     border: solid 4px #000;
     padding-top: 30px;
@@ -1100,7 +1326,11 @@ nav{
     font-size: 14px;
     padding: 10px 20px;
 }
-/*LOCATION PAGE*/
+
+/*--------------------------------
+LOCATION PAGE (1200px and up)
+--------------------------------*/
+
 .locationPageHourLastPara{
     margin-bottom: 5%;
 }
@@ -1116,10 +1346,10 @@ nav{
     font-size: 22px !important;
 }
 .locationPageDinnerHours-1 p{
-    margin-left: 25%;
+    margin-left: 10%;
 }
 .locationPageDinnerHours-2 p{
-    margin-right: 25%;
+    margin-right: 10%;
 }
 .locationPageLocationsContainer h2{
     text-align: center;
@@ -1152,6 +1382,7 @@ nav{
     font-size: 18px;
     background-color: transparent;
     padding: 5px 30px;
+    border: solid 2px #161E26;
 }
 .locationPageMapContainer iframe{
     width: 100%;
@@ -1159,7 +1390,138 @@ nav{
     margin-bottom: 100px;
     margin-top: 100px;
 }
-/*ABOUT PAGE*/
+
+/*--------------------------------
+    CHIBI PAGE (1200px and up)
+--------------------------------*/
+
+.chibiHeroImageSection{
+    background-image: url('../img/domu-chibi-background.png');
+    width :100%;
+    height: 60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.chibiHeroImageSection h1{
+    font-size: 80px;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    padding: 5px 30px;
+    border: solid 4px #fff;
+}
+.ChibiDescriptionSection{
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+.ChibiDescriptionSection img{
+    width: 100%;
+}
+.ChibiDescriptionSection h2{
+    margin-top: 0%;
+    font-size: 45px;
+}
+.ChibiDescriptionSection p{
+    font-size: 16px;
+    margin-top: 4%;
+    line-height: 30px;
+}
+.ChibiDescriptionSection button{
+    padding: 5px 30px;
+    margin-top: 5%;
+    background-color: transparent;
+    text-transform: uppercase;
+    border: solid 2px #161E26;
+    color: #161E26;
+    font-size: 14px;
+}
+.chibiMenuHeader h2{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 45px;
+}
+.chibiMenuHeaderLine{
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #161E26;
+}
+.chibiMenu{
+    border: solid 4px #000;
+    padding-top: 30px;
+    width:85%;
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+.chibiMenu h2{
+    padding-top: 50px;
+    font-size: 25px; 
+    text-align: center;
+    color: #161E26;
+}
+.menuDinnerHeader h2{
+    padding-top:50px;
+    font-size: 65px;
+    text-align: center;
+    color: #161E26;
+}
+.horizontalLineDinnerHeader{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #161E26;
+}
+.fullDinnerMenu{
+    padding-top: 50px;
+}
+.howToRamen img{
+    margin-top: 0px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+.chibiMenuSection{
+    padding-left: 4%;
+    padding-right: 4%;
+}
+.chibiMenuSection h2{
+    padding-bottom: 40px;
+}
+.chibiMenuSection h3{
+    font-size: 20px;
+}
+.chibiMenuSection p{
+    font-size: 14px;
+    padding-bottom: 25px;
+}
+.chibiLocationContainer{
+    width: 100%;
+    margin-bottom: 10%;
+}
+.chibiLocationHeader h2{
+    text-align:center;
+    font-size: 45px;
+}
+.chibiLocationLeft h3{
+    font-size: 20px;
+    margin-top: 15%;
+    margin-bottom: 5%;
+}
+.chibiLocationLeft p{
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.chibiLocationRight iframe{
+    margin-top: 20%;
+    width: 100%;
+}
+
+/*--------------------------------
+ABOUT PAGE (1200px and up)
+--------------------------------*/
+
 .aboutPageHeroSection{
     background-image: url('../img/domu-about-header.png');
     width: 100%;
@@ -1201,6 +1563,7 @@ nav{
    margin-top: 10px;
    font-size: 16px;
    text-transform: uppercase;
+   border: solid 2px #161E26;
 }
 .aboutPageVideoSection{
     width: 80%;
@@ -1233,7 +1596,61 @@ nav{
     height: auto;
     margin-top: 20px;
 }
-    /*FOOTER SECTION*/
+
+/*--------------------------------
+MENU FILLER PAGE (1200px and up)
+---------------------------------*/
+
+.menuFillerImgs img{
+    width: 100%;
+}
+.menuFillerLeft{
+    margin:0;
+    padding:0;
+}
+.menuFillerRight{
+    margin:0;
+    padding:0;
+}
+.menuFillerLeft h2{
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    font-size: 80px;
+    color: #fff;
+}
+.menuFillerLeft button{
+    position: absolute;
+    top: 50%;
+    left: 37%;
+    background-color: transparent;
+    color: #fff;
+    border: solid 2px #fff;
+    padding: 5px 30px;
+    text-transform: uppercase;
+}
+.menuFillerRight h2{
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    font-size: 80px;
+    color: #fff;
+}
+.menuFillerRight button{
+    position: absolute;
+    top: 50%;
+    left: 37%;
+    background-color: transparent;
+    color: #fff;
+    border: solid 2px #fff;
+    padding: 5px 30px;
+    text-transform: uppercase;
+}
+
+/*--------------------------------
+FOOTER SECTION (1200px and up)
+--------------------------------*/
+
     .footerContainer h2{
         text-align: center;
         font-size: 50px;
