@@ -502,6 +502,7 @@ INDEX PAGE - ABOUT SECTION
     font-size: 18px;
     background-color: transparent;
     padding: 5px 30px;
+    border: 2px solid #161E26;
 }
 .locationPageMapContainer iframe{
     width: 100%;
@@ -1696,7 +1697,10 @@ FOOTER SECTION (1200px and up)
         padding-top: 0px;
     }
     .footerSectionRight img{
-        width:8%;
+        width:5%;
+    }
+    .fbSocial{
+        margin-left: 43% !important;
     }
 }
  
