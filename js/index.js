@@ -1,3 +1,5 @@
+
+
 $(document).ready(function() {
     $('.plates_section, .sweets_section, .drinks_section').hide();
 

@@ -44,21 +44,27 @@ button{
     font-family: Helvetica, sans-serif;
     font-weight: 400;
 }
-/*NAVIGATION*/
+/*--------------------------
+        NAVIGATION
+--------------------------*/
 nav{
     background-color: #161E26;
+}
+.navbar ul li{
+    padding-left: 15px;
 }
 .navbar ul li a{
     color: #fff;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 16px;
+    letter-spacing: 2px;
 }
 .dropdown-menu{
     background-color: #161E26;
 }
 
 /*--------------------------------
-        HERO IMAGE
+            HERO IMAGE
 ---------------------------------*/
 
 .jumbotron {
@@ -80,14 +86,14 @@ nav{
     font-size: 45px;
     text-transform: uppercase;
     text-align: center;
-    left: 16%;
+    left: 10%;
     top: 28%;
     letter-spacing: 3px;
   }
   .hero-container button{
     position: absolute;
     top: 35%;
-    left: 19%;
+    left: 13%;
     text-align: center;
     color: #fff;
     font-size: 15px;
@@ -109,21 +115,21 @@ nav{
 }
   .domuExplanation h1{
     text-align: center;
-    font-size: 35px;
+    font-size: 32px;
     padding-top: 20px;
     padding-bottom:20px;
     color: #161E26;
     text-transform: uppercase;
 }
 .domuExplanationParagraph p{
-    font-size: 16px;
+    font-size: 14px;
     padding: 0px 10px;
     text-align: center;
 }
   .domuExplanationParagraph button{
     text-align: center;
     color: #161E26;
-    font-size: 15px;
+    font-size: 12px;
     background-color: transparent;
     text-transform: uppercase;
     margin-top: 15px;
@@ -149,15 +155,21 @@ INDEX PAGE - DOMU SELECTION SECTION
     margin-top: 50px;
     padding: 0px;
 }
-.domuSelection img{
-    width: 100%; 
-    margin: 0;
-    padding: 0;      
+.domuSelectionLeft{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/Orlando+Hip+Bar.jpg") center top;
+    background-size: cover;
+    height: 65vh;
+    width: 100%;
+}
+.domuSelectionRight{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/image-asset.jpeg") center top;
+    background-size: cover;
+    width: 100%;
 }
 .domuSelectionLeft h2{
     position: absolute;
     top: 40%;
-    left: 19%;
+    left: 15%;
     color: #fff;
     font-size: 50px;
     text-transform: uppercase;
@@ -168,18 +180,18 @@ INDEX PAGE - DOMU SELECTION SECTION
     left: 35%;
     text-align: center;
     color: #fff;
-    font-size: 15px;
+    font-size: 12px;
     background-color: transparent;
     text-transform: uppercase;
     margin-top: 15px;
-    padding: 5px 30px;
+    padding: 3px 30px;
     background-color: transparent;
     border: solid 2px #fff;
 }
 .domuSelectionRight h2{
     position: absolute;
     top: 35%;
-    left: 35%;
+    left: 32%;
     color: #fff;
     font-size: 50px;
     text-transform: uppercase;
@@ -187,14 +199,14 @@ INDEX PAGE - DOMU SELECTION SECTION
 .domuSelectionRight button{
     position: absolute;
     top: 55%;
-    left: 35%;
+    left: 33%;
     text-align: center;
     color: #fff;
-    font-size: 15px;
+    font-size: 12px;
     background-color: transparent;
     text-transform: uppercase;
     margin-top: 15px;
-    padding: 5px 30px;
+    padding: 3px 30px;
     background-color: transparent;
     border: solid 2px #fff;
 }
@@ -202,23 +214,22 @@ INDEX PAGE - DOMU SELECTION SECTION
 /*--------------------------------
 INDEX PAGE - JOIN US SECTION
 ---------------------------------*/
-
 .joinUsSection h2{
     color: #161E26;
-    font-size: 30px;
+    font-size: 32px;
     text-transform: uppercase;
     padding-top: 50px;
     padding-bottom: 20px;
 }
 .joinUsSection p{
     color: #F6B75F;
-    font-size: 20px;
+    font-size: 16px;
     text-transform: uppercase;
 }
 .joinUsSection button{
     text-align: center;
     color: #161E26;
-    font-size: 15px;
+    font-size: 12px;
     background-color: transparent;
     text-transform: uppercase;
     margin-top: 15px;
@@ -229,7 +240,6 @@ INDEX PAGE - JOIN US SECTION
 /*--------------------------------
 INDEX PAGE - ABOUT SECTION
 --------------------------------*/
-
 .aboutContainer{
     padding-top: 60px;
     padding-left: 0px;
@@ -240,27 +250,32 @@ INDEX PAGE - ABOUT SECTION
 }
 .aboutContainer h2{
     position: absolute;
-    top: 32%;
-    left: 31%;
-    font-size: 30px;
+    top: 38%;
+    left: 14%;
+    font-size: 45px;
     color: #fff;
     text-transform: uppercase;
 }
 .aboutContainer button{
     position: absolute;
     top: 50%;
-    left: 36%;
+    left: 34%;
     text-align: center;
     color: #fff;
-    font-size: 15px;
+    font-size: 12px;
     background-color: transparent;
     text-transform: uppercase;
     margin-top: 15px;
-    padding: 5px 30px;
+    padding: 3px 30px;
     background-color: transparent;
     border: solid 2px #fff;
 }
-
+.aboutSection{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/toppings.jpg") center top;
+    background-size: cover;
+    width: 100%;
+    height:65vh;
+}
 /*--------------------------------
             MENU PAGE
 ---------------------------------*/
@@ -408,16 +423,20 @@ INDEX PAGE - ABOUT SECTION
     margin-top:24%;
     font-size:30px;
 }
-.menuLocationContainer img{
-    width: 100%;
-    padding: 2% 2%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+.menuLocationContainer{
+    width: 95%;
+}
+.menuLocationInner{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/bar-menu.png") center top;
+    background-size: cover;
+    height: 20vh;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 .menuLocationContainer h3{
     position: absolute;
     top: 40%;
-    left: 15%;
+    left: 10%;
     color: #fff;
     font-size: 14px;
     letter-spacing: 4px;
@@ -426,12 +445,12 @@ INDEX PAGE - ABOUT SECTION
 .menuLocationContainer button{
     position: absolute;
     top: 60%;
-    left:32%;
+    left:34%;
     background-color: transparent;
     border: solid 2px #fff;
     color: #fff;
     text-transform: uppercase;
-    font-size: 9px;
+    font-size: 7px;
     padding: 5px 20px;
 }
 
@@ -464,12 +483,12 @@ INDEX PAGE - ABOUT SECTION
     margin-bottom: 15%;
 }
 .locationPageHoursContainer p{
-    font-size: 18px;
+    font-size: 14px;
 }
 .locattionPageHoursHeader{
     padding-top: 30px;
     padding-bottom: 10px;
-    font-size: 22px !important;
+    font-size: 16px !important;
 }
 .locationPageLocationsContainer h2{
     text-align: center;
@@ -494,7 +513,7 @@ INDEX PAGE - ABOUT SECTION
     margin-bottom: 4%;
 }
 .locationPageLocationDetailsSection p{
-    font-size: 16px;
+    font-size: 14px;
     text-transform: uppercase;
     margin-top: 10%;
 }
@@ -510,13 +529,19 @@ INDEX PAGE - ABOUT SECTION
     margin-bottom: 100px;
     margin-top: 100px;
 }
+.locationPageLocationDetails-left{
+    margin-bottom: 50px;
+}
+.locationPageLocationDetails-middle{
+    margin-bottom: 50px;
+}
 
 /*--------------------------------
             ABOUT PAGE
 ---------------------------------*/
 
 .aboutPageHeroSection{
-     background-image: url('../img/domu-about-header.png');
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/domu-about-header.png") center top;
      width: 100%;
      height: 30vh;
      background-position: center;
@@ -533,28 +558,28 @@ INDEX PAGE - ABOUT SECTION
     border: solid 4px #fff;
 }
 .aboutPageDescriptionSection{
-    margin-top: 100px;
+    margin-top: 80px;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 95%;
 }
 .aboutPageDescriptionSection img{
     width: 100%;
 }
 .aboutPageDescriptionSection h2{
-    font-size: 36px;
+    font-size: 30px;
     margin-top: 10%;
 }
 .aboutPageDescriptionSection p{
     padding-top: 15px;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 40px;
 }
 .aboutPageDescriptionSection button{
     background-color: transparent;
     padding: 5px 30px;
     margin-top: 10px;
-    font-size: 18px;
+    font-size: 14px;
     text-transform: uppercase;
     border: 2px solid #161E26;
 }
@@ -564,7 +589,7 @@ INDEX PAGE - ABOUT SECTION
     margin-right: auto;
 }
 .aboutPageVideoSection h2{
-    font-size: 36px;
+    font-size: 30px;
     margin-top: 50px;
 }
 .aboutPageVideoSection iframe{
@@ -600,7 +625,7 @@ INDEX PAGE - ABOUT SECTION
 ---------------------------------*/
 
 .chibiHeroImageSection{
-    background-image: url('../img/domu-chibi-background.png');
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("..//img/chibi-hero-new-1.jpg") center top;
     width :100%;
     height: 30vh;
     background-position: center;
@@ -770,6 +795,9 @@ INDEX PAGE - ABOUT SECTION
 .footerSectionRight h2{
     padding-top: 50px;
 }
+.footerSectionMiddle p{
+    padding-left: 16% !important;
+}
 .horizontalLineLocations{
     width: 20%;
     background-color: #fff;
@@ -876,16 +904,17 @@ INDEX PAGE - ABOUT SECTION
         background-color: transparent;
         border: solid 2px #fff;
     }
-
-     /*---------------------------------------------
-            DOMU SELECTION SECTION (768px and up)
-     ----------------------------------------------*/
+     /*-----------------------------------------------------------
+            DOMU SELECTION SECTION - INDEX PAGE (768px and up)
+     -----------------------------------------------------------*/
 
     .domuSelectionLeft{
         padding-right: 0px;
+        height: 30vh;
     }
     .domuSelectionRight{
         padding-left: 0px;
+        height: 30vh;
     }
     .domuSelectionLeft h2{
         position: absolute;
@@ -918,10 +947,12 @@ INDEX PAGE - ABOUT SECTION
         padding: 5px 40px;
     }
 
-    /*------------------------------------------
-             ABOUT SECTION (768px and up)
-    -------------------------------------------*/
-
+    /*-----------------------------------------------
+             ABOUT SECTION INDEX PAGE (768px and up)
+    ------------------------------------------------*/
+    .aboutSection{
+        height: 30vh;
+    }
     .aboutContainer h2{
         top: 40%;
         left: 35%;
@@ -934,7 +965,158 @@ INDEX PAGE - ABOUT SECTION
         margin-top: 15px;
         padding: 5px 40px;
     }
+    /*-----------------------------------------
+                BRUNCH MENU (768px and up)
+    -----------------------------------------*/
 
+    .fullDinnerMenu button{
+        font-size: 22px;
+    }
+    .dinnerItemsContainer{
+        width: 95%;
+    }
+    .ramen_section h3{
+        font-size: 18px;
+    }
+    .ramen_section p{
+        font-size: 12px;
+    }
+    .featuredItemsContainer{
+        width: 95%;
+    }
+    .featuredRamenRight1{
+        margin-top: 1%;
+    }
+    .featuredRamenRight1 h3{
+        font-size: 28px;
+    }
+    .featuredRamenRight1 p{
+        font-size: 14px;
+    }
+    .featuredRamenLeft2{
+        margin-top:5%;
+    }
+    .featuredRamenLeft2 h3{
+        margin-top: 0%;
+        font-size: 28px;
+    }
+    .featuredRamenLeft2 p{
+        margin-top: 0%;
+        font-size: 14px;
+    }
+    .menuLocationContainer h3{
+        font-size: 31px;
+    }
+    .menuLocationContainer button{
+        top: 62%;
+        left: 38%;
+        font-size: 12px;
+    }
+
+      /*-----------------------------------------
+                LOCATION (768px and up)
+    -----------------------------------------*/
+
+    .locationPageDinnerHours-1{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .locationPageDinnerHours-2{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .locationPageHoursContainer p{
+        font-size: 12px;
+    }
+    .locationPageLocationDetailsSection{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .locationPageLocationDetailsSection p{
+        font-size: 11px;
+    }
+    .locationPageLocationDetails-middle{
+        margin-top: 20px;
+    }
+    .locationPageLocationDetailsSection p{
+        margin-top: 0;
+    }
+    .text-center{
+        margin-top: 0px;
+    }
+    .locationPageMapSection{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .locationPageMapSection iframe{
+        height: 300px;
+    }
+
+      /*-----------------------------------------
+               CHIBI (768px and up)
+    -----------------------------------------*/
+    .chibiHeroImageSection h1{
+        top: 39%;
+        left: 30%;
+    }
+    .ChibiDescriptionSection h2{
+        margin-top: 0%;
+    }
+    .ChibiDescriptionSection p{
+        font-size: 12px;
+        margin-top: 5%;
+    }
+    .ChibiDescriptionSection h2{
+        font-size: 28px;
+    }
+    .chibiMenu{
+        width: 95%;
+    }
+    .chibiMenuSection h3{
+        font-size: 18px;
+    }
+    .chibiMenuSection p{
+        font-size: 12px;
+    }
+    .chibiLocationContainer{
+        width: 95%;
+    }
+    .chibiLocationLeft{
+        padding-left: 0;
+        padding-right: 15px;
+    }
+    .chibiLocationRight{
+        padding-left: 15px;
+        padding-right: 0;
+    }
+    .chibiLocationLeft h3{
+        font-size: 16px;
+    }
+    .chibiLocationLeft p{
+        font-size: 12px;
+    }
+    
+        /*-----------------------------------------
+                ABOUT (768px and up)
+    -----------------------------------------*/
+    .aboutPageHeroSection h1{
+        left: 30%;
+    }
+    .aboutPageDescriptionSection h2{
+        margin-top: 0%;
+    }
+    .aboutPageDescriptionSection p{
+        font-size: 12px;
+        line-height: 35px;
+    }
+    .aboutPageVideoSection h2{
+        text-align: center;
+        margin-top: 100px;
+    }
+    .aboutPagePhotoSection-header h2{
+        text-align: center;
+        margin-top: 50px;
+    }
     /*-----------------------------------------
             FOOTER SECTION (768px and up)
     ------------------------------------------*/
@@ -1036,8 +1218,8 @@ Large devices (desktops, 992px and up)
     }
     .hero-container button{
         position: absolute;
-        top: 48%;
-        left: 43%;
+        top: 51%;
+        left: 44%;
         text-align: center;
         color: #fff;
         font-size: 15px;
@@ -1055,12 +1237,12 @@ Large devices (desktops, 992px and up)
 
     .domuExplanation h1{
         text-align: center;
-        font-size: 80px;
-        padding-top: 150px;
+        font-size: 70px;
+        padding-top: 15vh;
     }
     .domuExplanationParagraph p{
-        font-size: 25px;
-        padding: 50px 300px 0px 300px;
+        font-size: 20px;
+        padding: 0px 300px 0px 300px;
         text-align: center;
     }
     .domuExplanationParagraph button{
@@ -1101,9 +1283,11 @@ Large devices (desktops, 992px and up)
 
     .domuSelectionLeft{
         padding-right: 0px;
+        height: 60vh;
     }
     .domuSelectionRight{
         padding-left: 0px;
+        height: 60vh;
     }
     .domuSelectionLeft h2{
         position: absolute;
@@ -1153,6 +1337,9 @@ Large devices (desktops, 992px and up)
         border: solid 2px #161E26;
     }
     /*ABOUT SECTION*/
+    .aboutSection{
+        height: 60vh;
+    }
     .aboutContainer h2{
         top: 45%;
         left: 37%;
@@ -1191,7 +1378,7 @@ Large devices (desktops, 992px and up)
     font-size: 80px !important;
     }
 .horizontalLineDinnerHeader{
-        width: 20%;
+        width: 12%;
         margin-left: auto;
         margin-right: auto;
         margin-top: 30px;
@@ -1391,13 +1578,17 @@ LOCATION PAGE (1200px and up)
     margin-bottom: 100px;
     margin-top: 100px;
 }
-
+.locationPageLocationDetails-left{
+    margin-bottom: 0px;
+}
+.locationPageLocationDetails-middle{
+    margin-bottom: 0px;
+}
 /*--------------------------------
     CHIBI PAGE (1200px and up)
 --------------------------------*/
 
 .chibiHeroImageSection{
-    background-image: url('../img/domu-chibi-background.png');
     width :100%;
     height: 60vh;
     background-position: center;
@@ -1445,7 +1636,7 @@ LOCATION PAGE (1200px and up)
     font-size: 45px;
 }
 .chibiMenuHeaderLine{
-    width: 20%;
+    width: 4%;
     margin-left: auto;
     margin-right: auto;
     background: #161E26;
@@ -1470,7 +1661,7 @@ LOCATION PAGE (1200px and up)
     color: #161E26;
 }
 .horizontalLineDinnerHeader{
-    width: 40%;
+    width: 12%;
     margin-left: auto;
     margin-right: auto;
     background-color: #161E26;
@@ -1524,7 +1715,6 @@ ABOUT PAGE (1200px and up)
 --------------------------------*/
 
 .aboutPageHeroSection{
-    background-image: url('../img/domu-about-header.png');
     width: 100%;
     height: 60vh;
     background-position: center;
@@ -1602,7 +1792,15 @@ ABOUT PAGE (1200px and up)
 MENU FILLER PAGE (1200px and up)
 ---------------------------------*/
 
-.menuFillerImgs img{
+.menuFillerLeft{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/ramen-filler-left.jpg") center top;
+    background-size: cover;
+    height: 65vh;
+    width: 100%;
+}
+.menuFillerRight{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/ramen-filler-right.jpg") center top;
+    background-size: cover;
     width: 100%;
 }
 .menuFillerLeft{
@@ -1651,7 +1849,6 @@ MENU FILLER PAGE (1200px and up)
 /*--------------------------------
 FOOTER SECTION (1200px and up)
 --------------------------------*/
-
     .footerContainer h2{
         text-align: center;
         font-size: 50px;
