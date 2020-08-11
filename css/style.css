@@ -1498,11 +1498,15 @@ Large devices (desktops, 992px and up)
     width: 100%;
     padding: 5% 5%;
 }
+.menuLocationInner{
+    height: 50vh;
+    width: 91%;
+    margin-left: auto;
+    margin-right: auto;
+}
 .menuLocationContainer h3{
     position: absolute;
-    top: 45%;
-    left: 21%;
-    font-size: 80px;
+    font-size: 70px;
     letter-spacing: 4px;
 }
 .menuLocationContainer button{
