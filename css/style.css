@@ -450,7 +450,7 @@ INDEX PAGE - ABOUT SECTION
 }
 .aboutContainer button{
     position: absolute;
-    top: 62%;
+    top: 76%;
     left: 50%;
     transform: translate(-50%, -62%);
     text-align: center;
