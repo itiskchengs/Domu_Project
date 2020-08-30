@@ -1,0 +1,2149 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+@font-face{
+    font-family: 'Lovelo-Black';
+    src: url('../font/Lovelo-Black.ttf');
+}
+@font-face{
+    font-family: 'Lovelo-LineBold';
+    src: url('../font/Lovelo-LineBold.ttf');
+}
+@font-face{
+    font-family: 'Lovelo-LineLight';
+    src: url('../font/Lovelo-LineLight.ttf');
+}
+
+/*--------------------------------
+        GLOBAL STYLES
+--------------------------------*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #FAF3EB;
+    overflow-x: hidden;
+}
+h1{
+    font-family: 'Lovelo-Black';
+    font-weight: 700;
+}
+h2{
+    font-family: 'Lovelo-Black';
+    font-weight: 700;
+}
+h3{
+    font-family: 'Lovelo-Black';
+    font-weight: 700;
+}
+p{
+    font-family: Helvetica, sans-serif;
+    font-weight: 200;
+}
+button{
+    font-family: Helvetica, sans-serif;
+    font-weight: 400;
+}
+/*--------------------------
+        NAVIGATION
+--------------------------*/
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    cursor: pointer;
+  }
+  
+  .logo img {
+    position: relative;
+    width: 68%;
+    top: 0.5rem;
+    left: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .menu-btn {
+    position: absolute;
+    z-index: 3;
+    right: 1rem;
+    top: 2rem;
+    height: 20px;
+    width: 28px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .menu-btn_burger {
+    position: absolute;
+    right: 0;
+    top: 0.5 rem;
+    width: 28px;
+    height: 3px;
+    background: #fff;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .menu-btn_burger::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    width: 28px;
+    height: 3px;
+    background: #fff;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .menu-btn_burger::after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    width: 20px;
+    height: 3px;
+    background: #fff;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .menu-btn_burger.open {
+    transform: rotate(720deg);
+    background: transparent;
+  }
+  
+  .menu-btn_burger.open::before {
+    transform: rotate(45deg) translate(5px, 8px);
+  }
+  
+  .menu-btn_burger.open::after {
+    width: 28px;
+    transform: rotate(-45deg) translate(3px, -7px);
+  }
+  .menu-nav{
+    margin-bottom: 0 !important;
+  }
+  .nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    opacity: 0.98;
+    background-color: #161E26;
+    height:8vh;
+    z-index: 2;
+  }
+  
+  .nav.open {
+    visibility: visible;
+  }
+  
+  .nav .menu-nav {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background: #272727;
+    list-style-type: none;
+    padding-right: 1rem;
+    transform: translateY(-100%);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .nav .menu-nav.open {
+    transform: translateY(0);
+  }
+  
+  .nav .menu-nav_item {
+    transform: translateX(100vw);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .nav .menu-nav_item.open {
+    transform: translateX(0);
+  }
+  
+  .nav .menu-nav_item.active > a {
+    color: #F6B75F;
+  }
+  
+  .nav .menu-nav_item a {
+    color: #fff;
+  }
+  
+  .nav .menu-nav_link {
+    display: inline-block;
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 2rem 0;
+    font-weight: 300;
+    transition: all 0.5s ease-in-out;
+  }
+  .nav .menu-nav_link:hover {
+    color: #F6B75F;
+    text-decoration: none;
+  }
+  
+  .menu-nav_item:nth-child(1) {
+    transition-delay: 0.25s;
+  }
+  
+  .menu-nav_item:nth-child(2) {
+    transition-delay: 0.35s;
+  }
+  
+  .menu-nav_item:nth-child(3) {
+    transition-delay: 0.45s;
+  }
+  
+  .menu-nav_item:nth-child(4) {
+    transition-delay: 0.55s;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .menu-btn {
+      visibility: hidden;
+    }
+    .nav {
+      visibility: visible;
+      display: inline !important;
+    }
+    .nav .menu-nav {
+      display: block;
+      transform: translateY(0);
+      height: 100%;
+      background: transparent;
+      text-align: right;
+    }
+    .nav .menu-nav_item {
+      display: inline;
+      padding-right: 1.5rem;
+    }
+    .nav .menu-nav_link {
+      font-size: 1.2rem;
+    }
+  }
+/*--------------------------------
+            HERO IMAGE
+---------------------------------*/
+
+.jumbotron {
+    color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #fff;
+    background-image: url(../img/ramen-background.png);
+    width: 100%;
+    height: 40vh;
+    text-align: center;
+  }
+  video {
+    display: none;
+  }
+  .hero-container h1{
+    display: inline-block;
+    margin-top: 14vh;
+    color: #fff;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+  }
+  .hero-container button{
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    background-color: transparent;
+    text-transform: uppercase;
+    margin-top: 11px;
+    padding: 5px 30px;
+    background-color: transparent;
+    border: solid 2px #fff;
+}
+
+  /*------------------------------------
+  INDEX PAGE - EXPLAINATION SECTION
+  -------------------------------------*/
+
+  .domuExplanation{
+    background-image: url(../img/DOMU+FOOTER+BG.png);
+    width: 100;
+}
+  .domuExplanation h1{
+    text-align: center;
+    font-size: 32px;
+    padding-top: 20px;
+    padding-bottom:20px;
+    color: #161E26;
+    text-transform: uppercase;
+}
+.domuExplanationParagraph p{
+    font-size: 14px;
+    padding: 0px 10px;
+    text-align: center;
+}
+  .domuExplanationParagraph button{
+    text-align: center;
+    color: #161E26;
+    font-size: 12px;
+    background-color: transparent;
+    text-transform: uppercase;
+    margin-top: 15px;
+    padding: 5px 30px;
+    border: 2px solid #161E26;
+}
+.domuExplanationImgContainer img{
+    width: 100%;
+    margin-top: 40px;
+    display: none;
+}
+.domuExplanationImgContainer-2 img{
+    width: 100%;
+    margin-top: 40px;
+    display: none;
+}
+
+/*-------------------------------------
+INDEX PAGE - DOMU SELECTION SECTION 
+--------------------------------------*/
+
+.domuSelection{
+    margin-top: 50px;
+    padding: 0px;
+}
+.domuSelectionLeft{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/Orlando+Hip+Bar.jpg") center top;
+    background-size: cover;
+    height: 35vh;
+    width: 100%;
+    transform: translateX(-1000px);
+}
+.slide-left{
+    transform: translateX(0px);
+    transition: all 1.5s ease-out;
+}
+.domuSelectionRight{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/image-asset.jpeg") center top;
+    background-size: cover;
+    width: 100%;
+    height: 35vh;
+    transform: translateX(1000px);
+}
+.slide-right{
+    transform: translateX(0px);
+    transition: all 1.5s ease-out;
+}
+.domuSelectionLeft h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+.domuSelectionLeft button{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    background-color: transparent;
+    text-transform: uppercase;
+    margin-top: 15px;
+    padding: 3px 30px;
+    background-color: transparent;
+    border: solid 2px #fff;
+}
+.domuSelectionRight h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+.domuSelectionRight button{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    background-color: transparent;
+    text-transform: uppercase;
+    margin-top: 15px;
+    padding: 3px 30px;
+    background-color: transparent;
+    border: solid 2px #fff;
+}
+
+/*--------------------------------
+INDEX PAGE - JOIN US SECTION
+---------------------------------*/
+.joinUsContainer{
+    /*opacity: 0;
+    transition: all 1s ease-out;*/
+    transform: translateY(360px);
+}
+.joinUsContainer.slide-up{
+   /* opacity: 1; */
+   transform: translateY(0px);
+   transition: all .5s ease-out;
+}
+.joinUsSection h2{
+    color: #161E26;
+    font-size: 32px;
+    text-transform: uppercase;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.joinUsSection p{
+    color: #F6B75F;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.joinUsSection button{
+    text-align: center;
+    color: #161E26;
+    font-size: 12px;
+    background-color: transparent;
+    text-transform: uppercase;
+    margin-top: 15px;
+    padding: 5px 30px;
+    border: 2px solid #161E26;
+}
+
+/*--------------------------------
+INDEX PAGE - ABOUT SECTION
+--------------------------------*/
+.aboutContainer{
+    padding-top: 60px;
+    padding-left: 0px;
+    padding-right: 0px;
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+.fade-in{
+    opacity: 1;
+}
+.aboutContainer img{
+    width: 100%;
+}
+.aboutContainer h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 34px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.aboutContainer button{
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -62%);
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    background-color: transparent;
+    text-transform: uppercase;
+    margin-top: 15px;
+    padding: 3px 30px;
+    background-color: transparent;
+    border: solid 2px #fff;
+}
+.aboutSection{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/toppings.jpg") center top;
+    background-size: cover;
+    width: 100%;
+    height:23vh;
+}
+/*--------------------------------
+MENU FILLER PAGE
+---------------------------------*/
+.menuFillerImgs{
+    margin-top: 8vh;
+}
+.menuFillerLeft{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/ramen-filler-left.jpg") center top;
+    background-size: cover;
+    height: 35vh;
+    width: 100%;
+}
+.menuFillerRight{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/ramen-filler-right.jpg") center top;
+    background-size: cover;
+    height: 35vh;
+    width: 100%;
+}
+.menuFillerLeft{
+    margin:0;
+    padding:0;
+}
+.menuFillerRight{
+    margin:0;
+    padding:0;
+}
+.menuFillerLeft h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: #fff;
+}
+.menuFillerLeft button{
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -63%);
+    background-color: transparent;
+    color: #fff;
+    border: solid 2px #fff;
+    padding: 5px 30px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.menuFillerRight h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: #fff;
+}
+.menuFillerRight button{
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -63%);
+    background-color: transparent;
+    color: #fff;
+    border: solid 2px #fff;
+    padding: 5px 30px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+/*--------------------------------
+            MENU PAGE
+---------------------------------*/
+.menuDinnerHeader{
+    margin-top: 8vh;
+}
+.dinnerItemsContainer{
+    border: solid 4px #000;
+    padding-top: 30px;
+    width:85%;
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+.dinnerItemsContainer h2{
+    padding-top: 50px;
+    font-size: 30px; 
+    text-align: center;
+    color: #161E26;
+}
+.menuDinnerHeader h2{
+    padding-top:50px;
+    font-size: 65px;
+    text-align: center;
+    color: #161E26;
+}
+.horizontalLineDinnerHeader{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #161E26;
+}
+.fullDinnerMenu{
+    padding-top: 50px;
+}
+.howToRamen img{
+    margin-top: 0px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+.ramen_section{
+    padding-left: 4%;
+    padding-right: 4%;
+}
+.ramen_section h2{
+    padding-bottom: 40px;
+}
+.ramen_section h3{
+    font-size: 20px;
+}
+.ramen_section p{
+    font-size: 14px;
+    padding-bottom: 25px;
+}
+.plates_section{
+    padding-left: 4%;
+    padding-right: 4%;
+}
+.plates_section h2{
+    padding-bottom :50px;
+}
+.plates_section p{
+    font-size: 14px; 
+    padding-bottom: 25px;
+}
+.sweets_section{
+    padding-top: 50px;
+}
+.sweets_section h4{
+    text-align: center;
+    font-size: 19px;
+    margin-top: 2rem;
+    padding-bottom: 15px;
+}
+.sweets_section p{
+    text-align: center;
+    font-size: 14px; 
+    padding-bottom: 100px;
+}
+.drinks_section{
+    padding-left: 4%;
+    padding-right: 4%;
+}
+.drinks_section h2{
+    padding-bottom: 50px;
+}
+.drinks_section h3{
+    font-size: 20px;
+}
+.drinks_section p{
+    font-size: 14px;
+    padding-bottom: 25px;
+}
+.fullDinnerMenu{
+    padding-bottom: 20px;
+}
+.fullDinnerMenu button{
+    display: inline-block;
+    padding: 0px 15px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+    border:none;
+    background-color: transparent;
+}
+.featuredItemsContainer{
+    border: solid 4px #000;
+    padding-top: 100px;
+    width: 85%;
+}
+.featuredItemsContainer h3{
+    font-size: 35px;
+    color: #161E26;
+}
+.featuredRamenWhole1{
+    padding-top: 50px;
+}
+.featuredRamenLeft1 img{
+    width: 100%;
+}
+.featuredRamenRight1{
+    margin-left: 3%;
+}
+.featuredRamenRight1 h3{
+    margin-top: 5%;
+    font-size: 30px;
+}
+.featuredRamenRight1 p{
+    font-size: 14px;
+}
+.featuredRamenLeft2{
+    margin-right: 3%;
+    margin-left: 3%;
+}
+.featuredRamenLeft2 h3{
+    margin-top: 24%;
+    font-size: 30px
+}
+.featuredRamenLeft2 p{
+    font-size: 14px;
+}
+.featuredRamenRight2 img{
+    width: 100%;
+}
+.featuredRamenWhole3{
+    padding-bottom: 80px;
+}
+.featuredRamenLeft3 img{
+    width: 100%;
+}
+.featuredRamenRight3{
+    margin-left: 3%;
+}
+.featuredRamenRight3 h3{
+    margin-top:24%;
+    font-size:30px;
+}
+.featuredRamenRight3 p{
+    font-size: 14px;
+}
+.menuLocationContainer{
+    width: 95%;
+}
+.menuLocationInner{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/bar-menu.png") center top;
+    background-size: cover;
+    height: 20vh;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.menuLocationContainer h3{
+    position: absolute;
+    top: 50%;
+    left: 50% !important;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+.menuLocationContainer button{
+    position: absolute;
+    top: 72%;
+    left: 50% !important;
+    transform: translate(-50%,-72%);
+    background-color: transparent;
+    border: solid 2px #fff;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 7px;
+    padding: 5px 20px;
+}
+
+/*--------------------------------
+        LOCATION PAGE
+---------------------------------*/
+
+.locationPageHoursContainer{
+        border: solid 4px #000;
+        padding-top: 30px;
+        width:90%;
+        margin-bottom: 10%;
+        margin-top: 8rem;
+}
+.locationPageHoursContainer h1{
+        text-align: center;
+        padding-top: 50px;
+        font-size: 50px;
+}
+.locationPageHoursLine{
+        width: 12%;
+        background-color: #161E26;
+        margin-left: auto;
+        margin-right: auto;
+}
+.locationPageHoursContainer p{
+        text-align: center;
+}
+.locationPageHourLastPara{
+    margin-bottom: 15%;
+}
+.locationPageHoursContainer p{
+    font-size: 14px;
+}
+.locattionPageHoursHeader{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-size: 16px !important;
+}
+.locationPageLocationsContainer h2{
+    text-align: center;
+    font-size: 50px;
+}
+.locationPageLocationLine{
+    width: 10%;
+    background-color: #161E26;
+    margin-left: auto;
+    margin-right: auto;
+}
+.locationPageLocationDetailsSection img{
+    width: 6%;
+}
+.locationPageLocationDetails p{
+    font-size: 20px;
+}
+.locationPageLocationDetailsSection{
+    margin-top: 4%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 4%;
+}
+.locationPageLocationDetailsSection p{
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 10%;
+}
+.locationPageLocationDetailsSection button{
+    font-size: 18px;
+    background-color: transparent;
+    padding: 5px 30px;
+    border: 2px solid #161E26;
+}
+.locationPageMapContainer iframe{
+    width: 100%;
+    height: 600px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+.locationPageLocationDetails-left{
+    margin-bottom: 50px;
+}
+.locationPageLocationDetails-middle{
+    margin-bottom: 50px;
+}
+
+/*--------------------------------
+            ABOUT PAGE
+---------------------------------*/
+.aboutPageHeroContainer{
+    margin-top: 4rem;
+}
+.aboutPageHeroSection{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/domu-about-header.png") center top;
+     width: 100%;
+     height: 30vh;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+.aboutPageHeroSection h1{
+    color:#fff;
+    font-size: 20px;
+    position: absolute;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%,-50%);
+    padding: 5px 30px;
+    border: solid 2px #fff;
+}
+.aboutPageDescriptionSection{
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+.aboutPageDescriptionSection img{
+    width: 100%;
+}
+.aboutPageDescriptionSection h2{
+    font-size: 32px;
+    margin-top: 10%;
+}
+.aboutPageDescriptionSection p{
+    padding-top: 15px;
+    font-size: 14px;
+    line-height: 40px;
+}
+.aboutPageDescriptionSection button{
+    background-color: transparent;
+    padding: 5px 30px;
+    margin-top: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: 2px solid #161E26;
+}
+.aboutPageVideoSection{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.aboutPageVideoSection h2{
+    font-size: 30px;
+    margin-top: 50px;
+}
+.aboutPageVideoSection iframe{
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+}
+.aboutPagePhotoSection-header{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+.aboutPagePhotoSection{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+.aboutPagePhotoSection h2{
+    font-size: 45px;
+    margin-top: 50px;
+}
+.aboutPagePhotoSection img{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/*--------------------------------
+            CHIBI PAGE
+---------------------------------*/
+
+.chibiHeroImageSection{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("..//img/chibi-hero-new-1.jpg") center top;
+    width :100%;
+    height: 30vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.chibiHeroImageContainer{
+    margin-top: 4rem;
+}
+.chibiHeroImageSection h1{
+    color:#fff;
+    font-size: 20px;
+    position: absolute;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%,-50%);
+    padding: 5px 30px;
+    border: solid 2px #fff;
+
+}
+.ChibiDescriptionSection{
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+.ChibiDescriptionSection img{
+    width: 100%;
+}
+.ChibiDescriptionSection h2{
+    margin-top: 20%;
+    font-size: 45px;
+}
+.ChibiDescriptionSection p{
+    font-size: 14px;
+    margin-top: 10%;
+}
+.ChibiDescriptionSection button{
+    padding: 5px 30px;
+    margin-top: 5%;
+    background-color: transparent;
+    text-transform: uppercase;
+    border: solid 2px #161E26;
+    color: #161E26;
+    font-size: 14px;
+}
+.chibiMenuHeader h2{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 45px;
+}
+.chibiMenuHeaderLine{
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #161E26;
+}
+.chibiMenu{
+    border: solid 4px #000;
+    padding-top: 30px;
+    width:85%;
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+.chibiMenu h2{
+    padding-top: 50px;
+    font-size: 25px; 
+    text-align: center;
+    color: #161E26;
+}
+.menuDinnerHeader h2{
+    padding-top:50px;
+    font-size: 48px;
+    text-align: center;
+    color: #161E26;
+}
+.horizontalLineDinnerHeader{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #161E26;
+}
+.fullDinnerMenu{
+    padding-top: 50px;
+}
+.howToRamen img{
+    margin-top: 0px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+.chibiMenuSection{
+    padding-left: 4%;
+    padding-right: 4%;
+}
+.chibiMenuSection h2{
+    padding-bottom: 40px;
+}
+.chibiMenuSection h3{
+    font-size: 20px;
+}
+.chibiMenuSection p{
+    font-size: 14px;
+    padding-bottom: 25px;
+}
+.chibiLocationContainer{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.chibiLocationHeader h2{
+    text-align:center;
+    font-size: 45px;
+}
+.chibiLocationLeft h3{
+    font-size: 20px;
+    margin-top: 15%;
+    margin-bottom: 5%;
+}
+.chibiLocationLeft p{
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.chibiLocationRight iframe{
+    margin-top: 20%;
+    width: 100%;
+}
+
+/*--------------------------------
+        FOOTER SECTION
+----------------------------------*/
+
+.footerContainer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #161E26;
+    color: #fff;
+    text-transform: uppercase;
+}
+.footerContainer img{
+    width: 7%;
+    margin-left: 20%;
+}
+.footerContainer h2{
+    text-align: center;
+    font-size: 40px;
+}
+.footerContainer h3{
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 15px;
+    padding-top: 30px;
+}
+.footerContainer p{
+    font-size: 14px; 
+}
+.footerContainer button{
+    margin-left: 26%;
+    margin-bottom: 15%;
+    text-align: center;
+    color: #fff;
+    font-size: 11px;
+    background-color: transparent;
+    text-transform: uppercase;
+    padding: 5px 25px;
+    background-color: transparent;
+    border: solid 2px #fff;
+}
+.footerSectionLeft p{
+    padding-left: 26%;
+}
+.footerSectionMiddle h2{
+    padding-top: 50px;
+}
+.footerSectionMiddle p{
+    text-align: center;
+}
+.footerSectionRight h2{
+    padding-top: 50px;
+}
+.horizontalLineLocations{
+    width: 20%;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6vh;
+}
+.horizontalLineHours{
+    width: 20%;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6vh;
+}
+.horizontalLineSocial{
+    width: 20%;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6vh;
+}
+.location-top{
+    margin-top: 10%;
+}
+.footerSectionLeft img{
+    margin-left: 13%;
+    margin-top: 4%;
+    position: absolute
+}
+.footerSectionRight p{
+    display: none;
+}
+.footerSectionRight img{
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.fbSocial{
+    margin-left: 40% !important;
+}
+
+/*--------------------------------
+            ANIMATIONS
+---------------------------------*/
+
+.shutter-out-horizontal {
+    -webkit-transition: color 300ms;
+    transition: color 300ms;
+    position: relative;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    background: #161E26;
+  }
+  .shutter-out-horizontal:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #F6B75F;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition: 300ms ease-out;
+    transition: 300ms ease-out;
+  }
+  .shutter-out-horizontal:hover:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  /*--------------------------------
+            MEDIA QUERIES
+   -------------------------------*/
+   /*--------------------------------------------------------------------------------------
+   Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint 
+   ---------------------------------------------------------------------------------------*/
+
+@media (min-width: 768px) { 
+    /*LOGO*/
+    .logo img{
+        top: 16px;
+    }
+    /*HERO IMG*/ 
+    .hero-container h1{
+        font-size: 70px;
+        top: 5%;
+        left: 40%;
+        transform: translate(-40%, -5%);
+        position: absolute;
+    }
+    .hero-container button{
+        text-align: center;
+        top: 28%;
+        left: 43%;
+        position: absolute;
+        transform: translate(-43%, -28%);
+        color: #fff;
+        font-size: 15px;
+        background-color: transparent;
+        text-transform: uppercase;
+        margin-top: 15px;
+        padding: 10px 30px;
+        background-color: transparent;
+        border: solid 2px #fff;
+    }
+     /*-----------------------------------------------------------
+            DOMU SELECTION SECTION - INDEX PAGE (768px and up)
+     -----------------------------------------------------------*/
+
+    .domuSelectionLeft{
+        padding-right: 0px;
+        height: 30vh;
+    }
+    .domuSelectionRight{
+        padding-left: 0px;
+        height: 30vh;
+    }
+    .domuSelectionLeft h2{
+        color: #fff;
+        font-size: 40px;
+        text-transform: uppercase;
+    }
+    .domuSelectionLeft button{
+        font-size: 11px;
+        margin-top:15px;
+        padding: 5px 40px;
+    }
+    .domuSelectionRight h2{
+        font-size: 40px;
+    }
+    .domuSelectionRight button{
+        font-size: 11px;
+        margin-top: 15px;
+        padding: 5px 40px;
+    }
+
+    /*-----------------------------------------------
+             ABOUT SECTION INDEX PAGE (768px and up)
+    ------------------------------------------------*/
+    .aboutSection{
+        height: 30vh;
+    }
+    .aboutContainer h2{
+        font-size: 40px;
+    }
+    .aboutContainer button{
+        font-size: 14px;
+        margin-top: 15px;
+        padding: 5px 40px;
+    }
+    /*-----------------------------------------
+                BRUNCH MENU (768px and up)
+    -----------------------------------------*/
+
+    .fullDinnerMenu button{
+        font-size: 22px;
+    }
+    .dinnerItemsContainer{
+        width: 95%;
+    }
+    .ramen_section h3{
+        font-size: 18px;
+    }
+    .ramen_section p{
+        font-size: 12px;
+    }
+    .featuredItemsContainer{
+        width: 95%;
+    }
+    .featuredRamenRight1{
+        margin-top: 1%;
+    }
+    .featuredRamenRight1 h3{
+        font-size: 28px;
+    }
+    .featuredRamenRight1 p{
+        font-size: 14px;
+    }
+    .featuredRamenLeft2{
+        margin-top:5%;
+    }
+    .featuredRamenLeft2 h3{
+        margin-top: 0%;
+        font-size: 28px;
+    }
+    .featuredRamenLeft2 p{
+        margin-top: 0%;
+        font-size: 14px;
+    }
+    .menuLocationContainer h3{
+        font-size: 31px;
+    }
+    .menuLocationContainer button{
+        font-size: 12px;
+    }
+
+      /*-----------------------------------------
+                LOCATION (768px and up)
+    -----------------------------------------*/
+
+    .locationPageDinnerHours-1{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .locationPageDinnerHours-2{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .locationPageHoursContainer p{
+        font-size: 12px;
+    }
+    .locationPageLocationDetailsSection{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .locationPageLocationDetailsSection p{
+        font-size: 11px;
+    }
+    .locationPageLocationDetails-middle{
+        margin-top: 20px;
+    }
+    .locationPageLocationDetailsSection p{
+        margin-top: 0;
+    }
+    .text-center{
+        margin-top: 0px;
+    }
+    .locationPageMapSection{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .locationPageMapSection iframe{
+        height: 300px;
+    }
+
+      /*-----------------------------------------
+               CHIBI (768px and up)
+    -----------------------------------------*/
+    .chibiHeroImageSection h1{
+        font-size:50px;
+    }
+    .ChibiDescriptionSection h2{
+        margin-top: 0%;
+    }
+    .ChibiDescriptionSection p{
+        font-size: 12px;
+        margin-top: 5%;
+    }
+    .ChibiDescriptionSection h2{
+        font-size: 28px;
+    }
+    .chibiMenu{
+        width: 95%;
+    }
+    .chibiMenuSection h3{
+        font-size: 18px;
+    }
+    .chibiMenuSection p{
+        font-size: 12px;
+    }
+    .chibiLocationContainer{
+        width: 95%;
+    }
+    .chibiLocationLeft{
+        padding-left: 0;
+        padding-right: 15px;
+    }
+    .chibiLocationRight{
+        padding-left: 15px;
+        padding-right: 0;
+    }
+    .chibiLocationLeft h3{
+        font-size: 16px;
+    }
+    .chibiLocationLeft p{
+        font-size: 12px;
+    }
+    
+        /*-----------------------------------------
+                ABOUT (768px and up)
+    -----------------------------------------*/
+    .aboutPageHeroSection h1{
+        font-size: 50px;
+    }
+    .aboutPageDescriptionSection h2{
+        margin-top: 0%;
+    }
+    .aboutPageDescriptionSection p{
+        font-size: 12px;
+        line-height: 35px;
+    }
+    .aboutPageVideoSection h2{
+        text-align: center;
+        margin-top: 100px;
+    }
+    .aboutPagePhotoSection-header h2{
+        text-align: center;
+        margin-top: 50px;
+    }
+    /*-----------------------------------------
+            FOOTER SECTION (768px and up)
+    ------------------------------------------*/
+
+    .footerContainer h2{
+        text-align: center;
+        font-size: 30px;
+    }
+    .footerSectionLeft img{
+        max-width: 20%;
+        margin-top: 0%;
+        margin-left: 15%;
+    }
+    .footerSectionLeft p{
+        text-align: left;
+        padding-left: 28%;
+        font-size:12px;
+    }
+    .footerSectionLeft button{
+        text-align: left;
+        margin-left: 28%;
+    }
+    .footerSectionLeft{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #location-desktop{
+        margin-top: 10% !important;
+    }
+    .location-top{
+        margin-top: 0% !important;
+    }
+    .footerSectionMiddle h2{
+        padding-top: 0px;
+    }
+    .footerSectionMiddle p{
+        text-align: center;
+        padding-left:  0% !important;
+        font-size: 12px;
+    }
+    .footerSectionRight h2{
+        padding-top: 0px;
+    }
+    .footerSectionRight img{
+        width: 12%;
+    }
+}
+ 
+/*--------------------------------------------
+Large devices (desktops, 992px and up) 
+--------------------------------------------*/
+
+@media (min-width: 950px) { 
+
+/*--------------------------------
+            MENU PAGE
+---------------------------------*/
+.menuLocationContainer h3 {
+        font-size: 32px; 
+        left: 14%;
+    }
+}
+
+
+/*------------------------------------------------------
+ Extra large devices (large desktops, 1200px and up) 
+------------------------------------------------------*/
+  
+@media (min-width: 1200px) { 
+    /*LOGO*/
+    .logo img{
+        width: 80%;
+    }
+    /*NAVIGATION*/ 
+    nav{
+        background-size: cover;
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+        position: fixed;
+    } 
+    .jumbotron {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #fff;
+        width: 100%;
+        height: 55vh;
+        background-image: none;
+      }
+      video{
+          position: absolute;
+          top: 8%;
+          left: 0%;
+          object-fit: cover;
+          width: 100%;
+          height: 70%;
+          display: inline-block;
+      }
+    .hero-container h1{
+        font-size: 100px;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+        position: absolute;
+    }
+    .hero-container button{
+        text-align: center;
+        position: absolute;
+        top: 48%;
+        left: 50%;
+        transform: translate(-50%, -48%);
+        color: #fff;
+        font-size: 15px;
+        background-color: transparent;
+        text-transform: uppercase;
+        margin-top: 15px;
+        padding: 10px 30px;
+        background-color: transparent;
+        border: solid 2px #fff;
+    }
+
+    /*------------------------------------------
+    DOMU EXPLANATION SECTION (1200px and up)
+    -------------------------------------------*/
+
+    .domuExplanation h1{
+        text-align: center;
+        font-size: 70px;
+        padding-top: 24vh;
+    }
+    .domuExplanationParagraph p{
+        font-size: 20px;
+        padding: 0px 300px 0px 300px;
+        text-align: center;
+    }
+    .domuExplanationParagraph button{
+        text-align: center;
+        color: #161E26;
+        font-size: 22px;
+        background-color: transparent;
+        text-transform: uppercase;
+        margin-top: 20px;
+        padding: 5px 30px;
+        border: solid 2px #161E26;
+    }  .domuExplanationImgContainer{
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    .domuExplanationImgContainer-2{
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    .domuExplanationImgContainer img{
+        width: 100%;
+        margin-top: 80px;
+        display: inline-block;
+        padding-left: 0px !important;
+    }
+    .domuExplanationImgContainer-2 img{
+        width: 100%;
+        margin-top: 20px;
+        display: inline-block;
+    }
+    .domuExplanationImg{
+        padding-left: 0px !important;
+    }
+
+   /*-----------------------------------------
+    DOMU SELECTION SECTION (1200px and up)
+    -----------------------------------------*/
+
+    .domuSelectionLeft{
+        padding-right: 0px;
+        height: 60vh;
+    }
+    .domuSelectionRight{
+        padding-left: 0px;
+        height: 60vh;
+    }
+    .domuSelectionLeft h2{
+        color: #fff;
+        font-size: 80px;
+        text-transform: uppercase;
+    }
+    .domuSelectionLeft button{
+        font-size: 20px;
+        margin-top:15px;
+        padding: 5px 40px;
+    }
+    .domuSelectionRight h2{
+        font-size: 80px;
+    }
+    .domuSelectionRight button{
+        font-size: 20px;
+        margin-top: 15px;
+        padding: 5px 40px;
+    }
+
+    /*--------------------------------
+    JOIN US SECTION (1200px and up)
+    --------------------------------*/
+
+    .joinUsSection h2{
+        font-size: 80px;
+    }
+    .joinUsSection p{
+        font-size: 30px;
+    }
+    .joinUsSection button{
+        font-size: 22px;
+        margin-top: 15px;
+        padding: 5px 40px;
+        border: solid 2px #161E26;
+    }
+    /*ABOUT SECTION*/
+    .aboutSection{
+        height: 60vh;
+    }
+    .aboutContainer h2{
+        font-size: 80px;
+    }
+    .aboutContainer button{
+        font-size: 22px;
+        margin-top: 15px;
+        padding: 5px 40px;
+    }
+
+
+    /*--------------------------------
+MENU FILLER PAGE (1200px and up)
+---------------------------------*/
+
+.menuFillerLeft{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/ramen-filler-left.jpg") center top;
+    background-size: cover;
+    height: 65vh;
+    width: 100%;
+}
+.menuFillerRight{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/ramen-filler-right.jpg") center top;
+    background-size: cover;
+    width: 100%;
+    height: 65vh;
+}
+.menuFillerLeft{
+    margin:0;
+    padding:0;
+}
+.menuFillerRight{
+    margin:0;
+    padding:0;
+}
+.menuFillerLeft h2{
+    font-size: 80px;
+    color: #fff;
+}
+.menuFillerLeft button{
+    background-color: transparent;
+    color: #fff;
+    border: solid 2px #fff;
+    padding: 5px 30px;
+    text-transform: uppercase;
+}
+.menuFillerRight h2{
+    font-size: 80px;
+    color: #fff;
+}
+.menuFillerRight button{
+    background-color: transparent;
+    color: #fff;
+    border: solid 2px #fff;
+    padding: 5px 30px;
+    text-transform: uppercase;
+}
+
+    /*--------------------------------
+        MENU PAGE (1200px and up)
+    --------------------------------*/
+    
+.dinnerItemsContainer{
+    border: solid 4px #000;
+    padding-top: 30px;
+    width:85%;
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+.dinnerItemsContainer h2{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 60px; 
+    text-align: center;
+}
+.dinnerItemsContainer p{
+    font-size: 17px !important;
+}
+.menuDinnerHeader h2{
+    padding-top:120px;
+    font-size: 80px !important;
+    }
+.horizontalLineDinnerHeader{
+        width: 12%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+}
+.fullDinnerMenu{
+    padding-top: 50px;
+}
+.howToRamen img{
+    margin-top: 0px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+.ramen_section{
+    padding-top:50px;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 4%;
+}
+.ramen_section h3{
+    font-size: 20px;
+}
+.ramen_section p{
+    padding-bottom: 25px;
+}
+.plates_section{
+    padding-top: 50px;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 4%;
+}
+.plates_section p{
+    padding-bottom: 25px;
+}
+.sweets_section{
+    padding-top: 50px;
+}
+.sweets_section h4{
+    text-align: center;
+    font-size: 22px;
+    padding-bottom: 15px;
+}
+.sweets_section p{
+    text-align: center;
+    padding-bottom: 100px;
+}
+.drinks_section{
+    padding-top: 25px;
+    padding-bottom: 50px;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+.drinks_section h2{
+    padding-bottom: 50px;
+}
+.drinks_section h3{
+    font-size: 20px;
+}
+.drinks_section p{
+    padding-bottom: 25px;
+}
+.fullDinnerMenu button{
+    display: inline-block;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size:25px;
+    font-family: Helvetica, sans-serif;
+}
+.featuredItemsContainer{
+    border: solid 4px #000;
+    padding-top: 100px;
+    width:85%;
+}
+.featuredItemsContainer h3{
+    font-size: 60px;
+}
+.featuredItemsContainer p{
+    font-size: 17px !important;
+}
+.featuredRamenWhole1{
+    padding-top:50px;
+}
+.featuredRamenLeft1 img{
+    width: 100%;
+}
+.featuredRamenRight1{
+    margin-left: 3%;
+}
+.featuredRamenRight1 h3{
+    margin-top:24%;
+    font-size:30px;
+}
+.featuredRamenLeft2{
+    margin-right: 3%;
+    margin-left: 3%;
+}
+.featuredRamenLeft2 h3{
+    margin-top:24%;
+    font-size:30px
+}
+.featuredRamenRight2 img{
+    width: 100%;
+}
+.featuredRamenWhole3{
+    padding-bottom: 80px;
+}
+.featuredRamenLeft3 img{
+    width: 100%;
+}
+.featuredRamenRight3{
+    margin-left: 3%;
+}
+.featuredRamenRight3 h3{
+    margin-top:24%;
+    font-size:30px;
+}
+.menuLocationContainer img{
+    width: 100%;
+    padding: 5% 5%;
+}
+.menuLocationInner{
+    height: 50vh;
+    width: 91%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.menuLocationContainer h3{
+    font-size: 45px;
+    letter-spacing: 4px;
+}
+.menuLocationContainer button{
+    background-color: transparent;
+    border: solid 2px #fff;
+    font-size: 14px;
+    padding: 10px 20px;
+}
+
+/*--------------------------------
+LOCATION PAGE (1200px and up)
+--------------------------------*/
+
+.locationPageHourLastPara{
+    margin-bottom: 5%;
+}
+.locationPageHoursContainer{
+    width: 70%; 
+}
+.locationPageHoursContainer p{
+    font-size: 18px;
+}
+.locattionPageHoursHeader{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-size: 22px !important;
+}
+.locationPageDinnerHours-1 p{
+    margin-left: 10%;
+}
+.locationPageDinnerHours-2 p{
+    margin-right: 10%;
+}
+.locationPageLocationsContainer h2{
+    text-align: center;
+    font-size: 60px;
+}
+.locationPageLocationLine{
+    width: 10%;
+    background-color: #161E26;
+    margin-left: auto;
+    margin-right: auto;
+}
+.locationPageLocationDetailsSection img{
+    width: 6%;
+}
+.locationPageLocationDetails p{
+    font-size: 20px;
+}
+.locationPageLocationDetailsSection{
+    margin-top: 4%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 4%;
+}
+.locationPageLocationDetailsSection p{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 0%;
+}
+.locationPageLocationDetailsSection button{
+    font-size: 18px;
+    background-color: transparent;
+    padding: 5px 30px;
+    border: solid 2px #161E26;
+}
+.locationPageMapContainer iframe{
+    width: 100%;
+    height: 600px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+.locationPageLocationDetails-left{
+    margin-bottom: 0px;
+}
+.locationPageLocationDetails-middle{
+    margin-bottom: 0px;
+}
+/*--------------------------------
+    CHIBI PAGE (1200px and up)
+--------------------------------*/
+
+.chibiHeroImageSection{
+    width :100%;
+    height: 60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.chibiHeroImageSection h1{
+    font-size: 80px;
+    padding: 5px 30px;
+    border: solid 4px #fff;
+}
+.ChibiDescriptionSection{
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+.ChibiDescriptionSection img{
+    width: 100%;
+}
+.ChibiDescriptionSection h2{
+    margin-top: 0%;
+    font-size: 45px;
+}
+.ChibiDescriptionSection p{
+    font-size: 16px;
+    margin-top: 4%;
+    line-height: 30px;
+}
+.ChibiDescriptionSection button{
+    padding: 5px 30px;
+    margin-top: 5%;
+    background-color: transparent;
+    text-transform: uppercase;
+    border: solid 2px #161E26;
+    color: #161E26;
+    font-size: 14px;
+}
+.chibiMenuHeader h2{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 45px;
+}
+.chibiMenuHeaderLine{
+    width: 4%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #161E26;
+}
+.chibiMenu{
+    border: solid 4px #000;
+    padding-top: 30px;
+    width:85%;
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+.chibiMenu h2{
+    padding-top: 50px;
+    font-size: 25px; 
+    text-align: center;
+    color: #161E26;
+}
+.menuDinnerHeader h2{
+    padding-top:50px;
+    font-size: 65px;
+    text-align: center;
+    color: #161E26;
+}
+.horizontalLineDinnerHeader{
+    width: 12%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #161E26;
+}
+.fullDinnerMenu{
+    padding-top: 50px;
+}
+.howToRamen img{
+    margin-top: 0px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+.chibiMenuSection{
+    padding-left: 4%;
+    padding-right: 4%;
+}
+.chibiMenuSection h2{
+    padding-bottom: 40px;
+}
+.chibiMenuSection h3{
+    font-size: 20px;
+}
+.chibiMenuSection p{
+    font-size: 14px;
+    padding-bottom: 25px;
+}
+.chibiLocationContainer{
+    width: 100%;
+    margin-bottom: 10%;
+}
+.chibiLocationHeader h2{
+    text-align:center;
+    font-size: 45px;
+}
+.chibiLocationLeft h3{
+    font-size: 20px;
+    margin-top: 15%;
+    margin-bottom: 5%;
+}
+.chibiLocationLeft p{
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.chibiLocationRight iframe{
+    margin-top: 20%;
+    width: 100%;
+}
+
+/*--------------------------------
+ABOUT PAGE (1200px and up)
+--------------------------------*/
+
+.aboutPageHeroSection{
+    width: 100%;
+    height: 60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.aboutPageHeroSection h1{
+   color:#fff;
+   font-size: 80px;
+   padding: 5px 30px;
+   border: solid 4px #fff;
+}
+.aboutPageDescriptionSection{
+   margin-top: 100px;
+   margin-left: auto;
+   margin-right: auto;
+   width: 80%;
+}
+.aboutPageDescriptionSection img{
+   width: 70%;
+}
+.aboutPageDescriptionSection h2{
+   font-size: 45px;
+   margin-top: 20px;
+}
+.aboutPageDescriptionSection p{
+   padding-top: 15px;
+   font-size: 18px;
+   line-height: 40px;
+}
+.aboutPageDescriptionSection button{
+   background-color: transparent;
+   padding: 5px 30px;
+   margin-top: 10px;
+   font-size: 16px;
+   text-transform: uppercase;
+   border: solid 2px #161E26;
+}
+.aboutPageVideoSection{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.aboutPageVideoSection h2{
+    font-size: 45px;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 2%;
+}
+.aboutPageVideoSection iframe{
+    margin-top: 20px;
+}
+.aboutPagePhotoSection{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+}
+.aboutPagePhotoSection-header h2{
+    font-size: 45px;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 2%;
+}
+.aboutPagePhotoSection img{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/*--------------------------------
+FOOTER SECTION (1200px and up)
+--------------------------------*/
+    .footerContainer h2{
+        text-align: center;
+        font-size: 50px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .footerSectionLeft img{
+        max-width: 20%;
+        margin-top: 0%;
+        margin-left:15%;
+        display:none;
+    }
+    .footerSectionLeft p{
+        text-align: left;
+        font-size:16px;
+    }
+    .footerSectionLeft button{
+        text-align: left;
+        font-size: 14px;
+    }
+    .footerSectionLeft{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #location-desktop{
+        margin-top: 10% !important;
+    }
+    .location-top{
+        margin-top: 0% !important;
+    }
+    .footerSectionMiddle h2{
+        padding-top: 0px;
+    }
+    .footerSectionMiddle h3{
+        font-size: 18px;
+    }
+    .footerSectionMiddle p{
+        text-align: center;
+        padding-left:  0%;
+        font-size: 16px;
+    }
+    .footerSectionRight h2{
+        padding-top: 0px;
+    }
+    .footerSectionRight img{
+        width:5%;
+    }
+    .fbSocial{
+        margin-left: 43% !important;
+    }
+}
+ 
